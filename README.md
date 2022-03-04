@@ -19,8 +19,7 @@ Databases:
 ### Details
 Rust code is in [main.rc](backend/src/main.rc) file.  
 The HTTP service is listening on TCP 8080, on 0.0.0.0.  
-Rust is getting the Mongo URI from the following environment variable, placed in [.env](backend/.env)
-`MONGODB_URI`
+Rust is getting the Mongo URI from the `MONGODB_URI` environment variable, placed in [.env](backend/.env)
 
 The containers are deployed using docker-compose with BuildKit, using multi-stage builds for Rust. See [Dockerfile](backend/Dockerfile)
 
