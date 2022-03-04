@@ -29,7 +29,7 @@ Check that the containers are up & running:
 ```bash
 $ docker-compose ps
 ```
-Testing the mongo connection after running the `docker-compose up` command from "How to run";
+Testing the mongo connection after running the `docker-compose up` command from "How to run":
 ```bash
 $ mongo 127.0.0.1:27017
 ```
