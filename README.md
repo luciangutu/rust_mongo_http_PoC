@@ -22,6 +22,8 @@ The HTTP service is listening on TCP 8080, on 0.0.0.0.
 Rust is getting the Mongo URI from the following environment variable, placed in [.env](backend/.env)
 `MONGODB_URI`
 
+The containers are deployed using docker-compose with BuildKit, using multi-stage builds for Rust. See [Dockerfile](backend/Dockerfile)
+
 ### Troubeshooting
 Check that the containers are up & running:
 ```bash
